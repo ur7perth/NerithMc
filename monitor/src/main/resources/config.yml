@@ -1,0 +1,3 @@
+# NerithMc HitMonitor
+# How many ticks of position history to keep per player (20 ticks = 1 second).
+history-ticks: 40
