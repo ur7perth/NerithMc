@@ -1,0 +1,15 @@
+name: NerithMcHitVerifier
+version: 1.0.0
+main: com.nerithmc.ghosthit.verifier.NerithVerifierPlugin
+api-version: '1.21'
+author: NerithMc
+depend: [NerithMcHitMonitor]
+description: NerithMc - verifies swings from HitMonitor and processes ghost hits as real hits.
+commands:
+  nerithghost:
+    description: NerithMc GhostHit admin command
+    usage: /nerithghost <reload|stats>
+    permission: nerithmc.ghosthit.admin
+permissions:
+  nerithmc.ghosthit.admin:
+    default: op
