@@ -1,0 +1,6 @@
+name: NerithMcHitMonitor
+version: 1.0.0
+main: com.nerithmc.ghosthit.monitor.NerithMonitorPlugin
+api-version: '1.21'
+author: NerithMc
+description: NerithMc - records every swing/hit attempt and player position history for ghost hit verification.
