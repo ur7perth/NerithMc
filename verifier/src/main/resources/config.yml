@@ -1,0 +1,34 @@
+# NerithMc HitVerifier
+
+debug: false
+
+# AUTO / VANILLA = use the server's own attack logic (Player#attack): Strength, attributes,
+#                  Sharpness, crits, knockback, fire aspect, shield, cooldown - exactly like a real hit.
+# MANUAL         = calculate the damage by hand (fallback, also used automatically if Player#attack is missing).
+damage-mode: AUTO
+
+# Reach used if the server has no interaction range attribute (survival = 3.0).
+reach-default: 3.0
+# Extra reach allowed on top of the attribute (covers small desync).
+reach-tolerance: 0.35
+# Hitbox is expanded by this many blocks for the aim check.
+hitbox-expansion: 0.15
+# Extra reach when the attack packet named the victim (the client definitely aimed at him).
+claimed-extra-tolerance: 0.6
+# Extra reach/hitbox when the attacker or the victim was gliding with elytra.
+elytra-extra-tolerance: 0.5
+
+# Lag compensation: the victim position is rewound by the attacker's ping.
+max-rewind-ticks: 8
+rewind-slack-ticks: 2
+attacker-slack-ticks: 2
+
+# Players farther than this from the attacker are not considered.
+scan-radius: 14.0
+
+# Ignore swings when the attack cooldown meter is below this (0.0 - 1.0).
+min-attack-strength: 0.25
+# Do not correct hits while the weapon is on item cooldown.
+respect-item-cooldown: true
+# Safety limit per attacker.
+max-corrections-per-second: 10
