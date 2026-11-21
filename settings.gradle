@@ -1,0 +1,2 @@
+rootProject.name = 'NerithMc-GhostHit'
+include 'monitor', 'verifier'
