@@ -1,0 +1,7 @@
+dependencies {
+    compileOnly project(':monitor')
+}
+
+jar {
+    archiveFileName = 'NerithMc-HitVerifier.jar'
+}
